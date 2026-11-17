@@ -32,7 +32,7 @@ Este repositório implementa o backend de uma plataforma de e-commerce seguindo 
 
 ## Stack Tecnológica
 
-* **Linguagem & Runtime:** Java 21 (LTS)
+* **Linguagem & Runtime:** Java 25 (LTS)
 * **Framework Principal:** Spring Boot 4.0.x (Spring Web, Spring Data JPA, Spring Validation)
 * **Banco de Dados & Migrations:** PostgreSQL 17, Hibernate, Flyway
 * **Observabilidade:** Spring Boot Actuator
@@ -96,7 +96,7 @@ Para executar todos os testes:
 ## Pipeline CI/CD
 
 Cada *push* ou *Pull Request* dispara o workflow configurado em `.github/workflows/ci.yml`, executando:
-1. Checkout do código e setup do **JDK 21** com cache de dependências Maven.
+1. Checkout do código e setup do **JDK 25** com cache de dependências Maven.
 2. Compilação estrita do projeto (`./mvnw clean compile`).
 3. Execução integral dos testes unitários e de integração com Testcontainers (`./mvnw verify`).
 ---
